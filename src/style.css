@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src:
+      url("./assets/Oswald.ttf") format("truetype")
+  }
+
+:root{
+    --body-color: #fff8f0;
+    --cards-color: #fff0e0;
+    --main-accent: #d2691e;
+    --secondary-accent: #a0522d;
+    --text-color: #3e3e3e;
+    --header-color: #7b3f00;
+    --btn-color: #e07b39;
+    --additional-color: #fff6f0;
+
+    font-size:15px;
+
+    font-family: "Oswald", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+body{
+    background-color: var(--body-color);
+
+}
+
+header{
+    background-color: var(--secondary-accent);
+    text-align: center;
+    padding:8px 0px;
+}
+
+.menu-item{
+    padding:0.5em 1em;
+    border-radius:6px;
+    font-size:1.3rem;
+    background-color: var(--body-color);
+    color: var(--header-color);
+    margin-right:10px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 3px 0px 5px var(--text-color);
+    border:none;
+    font-family: "Oswald", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-item:hover:not(.active){
+  background-color: var(--btn-color);
+  color: var(--body-color)
+}
+
+.active{
+    background-color: var(--btn-color);
+    color: var(--body-color)
+}
+
+#content{
+    text-align: center;
+    width:50%;
+    margin:0 auto;
+    padding-top:10px;
+}
+
+.content-item {
+    padding:20px;
+    background-color:var(--cards-color);
+    border:3px solid var(--header-color);
+    border-radius: 20px;
+    width:100%;
+    min-width:400px;
+    margin: auto;
+    color: var(--header-color);
+    margin-bottom:20px;
+}
+
+.description, .hours, .location, .menu-title, .menu-element{
+    width:75%;
+    color:var(--text-color);
+    font-size: 1.2rem;
+}
+
+.quote{
+    font-style: italic;
+}
+.author{
+    font-weight: bold;
+    text-align: left;
+    padding-left:15px;
+    margin-top:10px;
+}
+
+h2{
+    font-size:1.3em;
+    color:var(--header-color);
+    padding-bottom:20px;
+}
+
+.weekday-container{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    text-align: left;
+}
+
+.weekday{
+    font-weight: bold;
+    flex:1;
+}
+
+.weekday-hours{
+    flex:2;
+}
+
+.hours p{
+    color: var(--text-color);
+
+}
+
+address{
+   text-align: left;
+}
+
+.menu-title h2{
+    padding:0;
+}
+
+.menu-element{
+    text-align: left;
+    display:flex;
+    align-items: center;
+    color: var(--text-color);
+    padding:30px;
+}
+
+h3{
+    color: var(--header-color);
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.info .dish{
+    flex:1;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.menu-element img{
+    width:150px;
+    height: 150px;
+    margin-right:20px;
+}
